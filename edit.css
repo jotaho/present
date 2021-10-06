@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/gradient.png);
+    background-size: cover;
+    background-position: center;
+}
+button{
+    cursor: pointer;
+    font-size: 45px;
+    text-align: center;   
+    color: white;
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+    position: relative;
+    margin: 0;
+
+}
