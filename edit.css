@@ -10,15 +10,31 @@
     background-size: cover;
     background-position: center;
 }
-button{
+.button{
     cursor: pointer;
-    font-size: 45px;
-    text-align: center;   
-    color: white;
-    border: transparent;
-    background-color: transparent;
-    outline: transparent;
-    position: relative;
+    font-size: 45px;      
+    color: black;
+    border: 3px solid white;
+    padding:20px;
+    border-radius: 25px;
+    background-color: white;
     margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+}
+.button:hover{
+    border: 3px solid gray;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: gray;
 
+}
+.button:active{
+    border: 3px solid darkslategray;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: darkslategray;
 }
