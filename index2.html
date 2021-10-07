@@ -14,7 +14,7 @@
                 <div class="content">
                     <div class="close-btn" onclick="togglePopup()">&times;</div>
                     <h1>Câu hỏi xác thực</h1><br>
-                    <p>Đây là câu hỏi xác thực. Chỉ có thể nhập "Có" hoặc "Không"</p><br>
+                    <p>Đây là câu hỏi xác thực. Chỉ có thể nhập "Yes" hoặc "No"</p><br>
                     <p><b>- Bạn có thích món quà này không?</b> -</p><br>
                     <div id="error"></div>
                     <form id="form" action="/" method="GET">
@@ -35,22 +35,22 @@
         <script>
             function valid(){
                 a = document.getElementById("answer").value;
-                if(a === 'Có')
+                if(a === 'Yes')
                 {
                     alert('Xin cảm ơn! Bấm OK để tiếp tục.')
                     window.location.href = 'https://www.youtube.com/watch?v=iik25wqIuFo';
                 }
-                else if (a !== 'Có')
+                else if (a !== 'Yes')
                 {
                     alert('WRONG KEYWORD PLEASE RETURN!')
                     return false;
                 }
-                if(a === 'Không')
+                if(a === 'No')
                 {
                     alert('Mình đã làm hết sức rồi =(')
                     return false;
                 }
-                else if (a !== 'Không')
+                else if (a !== 'No')
                 {
                     alert('WRONG KEYWORD PLEASE RETURN!')
                     return false;
