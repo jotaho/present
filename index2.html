@@ -20,7 +20,7 @@
                     <form id="form" action="/" method="GET">
                      <div>
                      <input type="text" id="answer" name="answer" placeholder="Trả lời" required><br><br>
-                     <button type="submit" onclick="valid()">Submit</button>
+                     <button type="submit" onclick="return valid()">Submit</button>
                      </div>
                     </form>
                 </div>
@@ -33,29 +33,23 @@
         }
         </script>
         <script>
-            function valid(){
+            function valid() {
                 a = document.getElementById("answer").value;
                 if(a === 'Yes')
                 {
-                    alert('Xin cảm ơn! Bấm OK để tiếp tục.')
-                    window.location.href = 'https://www.youtube.com/watch?v=iik25wqIuFo';
-                }
-                else if (a !== 'Yes')
-                {
-                    alert('WRONG KEYWORD PLEASE RETURN!')
+                    alert('Xin cảm ơn! Bấm OK để tiếp tục.');
+                    location.href = 'index3.html';
                     return false;
                 }
-                if(a === 'No')
+                else if(a === 'No')
                 {
-                    alert('Mình đã làm hết sức rồi =(')
+                    alert('Phải thích cơ!');
                     return false;
                 }
-                else if (a !== 'No')
-                {
-                    alert('WRONG KEYWORD PLEASE RETURN!')
+                else{
+                    alert('No!')
                     return false;
                 }
-                
             }
         </script>
         </section>

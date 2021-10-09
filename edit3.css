@@ -1,0 +1,24 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/gradient.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family: dchlg;
+    src: url(font/dailychallengedemo.otf);
+}
+.div1{
+    font-size: 35px;
+    color: white;
+    font-family: dchlg;
+    text-align: center;
+    padding: 45px;
+}
